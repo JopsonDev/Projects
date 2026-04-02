@@ -8,7 +8,7 @@ B = 25
 Coins = 100
 while Coins > 0:
     X = int(input("Bet: \n"))
-    while X <= 0:
+    while X <= 0 or X > Coins:
         X = int(input("Invaild..Bet:  \n"))
     def slots():
         reel_1 = random.randint(1, 20)
